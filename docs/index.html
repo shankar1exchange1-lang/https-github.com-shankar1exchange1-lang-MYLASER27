@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Live</title>
 
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#07111f;
+ color:white;
+}
+header{
+ background:#0d1b2a;
+ padding:20px;
+ text-align:center;
+ border-bottom:2px solid #19c37d;
+}
+header h1{margin:0;color:#19c37d}
+nav{margin-top:12px}
+nav a{
+ color:white;
+ text-decoration:none;
+ margin:0 10px;
+}
+.container{
+ max-width:1000px;
+ margin:auto;
+ padding:25px 15px;
+}
+.hero{
+ background:linear-gradient(135deg,#102a43,#0b1728);
+ padding:35px 20px;
+ border-radius:15px;
+ text-align:center;
+}
+.hero h2{font-size:32px;margin:5px}
+.live{
+ display:inline-block;
+ background:#e63946;
+ padding:6px 14px;
+ border-radius:20px;
+ font-weight:bold;
+ margin-bottom:15px;
+}
+.card{
+ background:#102033;
+ padding:20px;
+ margin-top:20px;
+ border-radius:15px;
+ box-shadow:0 5px 20px #0005;
+}
+.score{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ text-align:center;
+}
+.team{width:40%;font-size:20px;font-weight:bold}
+.vs{font-size:18px;color:#19c37d}
+.runs{font-size:30px;margin-top:10px}
+.section-title{
+ margin-top:35px;
+ border-left:4px solid #19c37d;
+ padding-left:10px;
+}
+.match{
+ background:#102033;
+ padding:18px;
+ border-radius:12px;
+ margin:12px 0;
+}
+footer{
+ text-align:center;
+ padding:30px;
+ color:#9aa;
+ margin-top:30px;
+}
+button{
+ background:#19c37d;
+ border:0;
+ padding:10px 20px;
+ border-radius:8px;
+ font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🏏 CRICKET LIVE</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#live">Live Matches</a>
+<a href="#upcoming">Upcoming</a>
+<a href="#results">Results</a>
+</nav>
+</header>
+
+<div class="container">
+
+<div class="hero">
+<span class="live">● LIVE</span>
+<h2>Live Cricket Scores</h2>
+<p>Follow today's cricket matches and latest scores.</p>
+</div>
+
+<h2 class="section-title" id="live">🔴 Live Match</h2>
+
+<div class="card">
+<div class="score">
+<div class="team">
+Team A
+<div class="runs">156/4</div>
+</div>
+
+<div class="vs">VS</div>
+
+<div class="team">
+Team B
+<div class="runs">142/6</div>
+</div>
+</div>
+
+<p style="text-align:center;color:#19c37d">
+Team A needs 87 runs from 60 balls
+</p>
+</div>
+
+<h2 class="section-title" id="upcoming">📅 Upcoming Matches</h2>
+
+<div class="match">
+<b>India vs Australia</b>
+<p>Today • 7:30 PM</p>
+</div>
+
+<div class="match">
+<b>England vs Pakistan</b>
+<p>Tomorrow • 3:00 PM</p>
+</div>
+
+<h2 class="section-title" id="results">🏆 Recent Results</h2>
+
+<div class="match">
+<b>South Africa 178/6</b>
+<p>India 174/8 — South Africa won by 4 runs</p>
+</div>
+
+<div class="match">
+<b>Australia 201/5</b>
+<p>England 190/9 — Australia won by 11 runs</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Cricket Live Demo • All Rights Reserved
+</footer>
+
+</body>
+</html>
